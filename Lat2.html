@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div id="app">
+            <p>{{ greet(name) }}</p>
+            <a v-bind:href="url">Link Website SMK Telkom Malang</a>
+        </div>
+        <script>
+            var app = new Vue({
+                el: "#app",
+                methods: {
+                    greet: function(name){
+                        return 'Good morning ' + 'Zalsa Aquarista';
+                    }
+                },
+                data: {
+                    "url" : "https://www.smktelkom-mlg.sch.id"
+                }
+            })
+        </script>
+    </body>
+</html>
