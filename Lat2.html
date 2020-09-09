@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <title>Hello World</title>
     </head>
     <body>
         <div id="app">
             <p>{{ greet(name) }}</p>
+            <img v-bind:src="url"> <br>
             <a v-bind:href="url">Link Website SMK Telkom Malang</a>
         </div>
         <script>
@@ -18,7 +18,8 @@
                     }
                 },
                 data: {
-                    "url" : "https://www.smktelkom-mlg.sch.id"
+                    "url" : "https://www.smktelkom-mlg.sch.id",
+                    "url" : "https://www.fullstackpython.com/img/logos/vuejs-wide.png"
                 }
             })
         </script>
